@@ -29,9 +29,6 @@ $cakeDescription = 'Telemaque | e-shop home';
         <!-- Bootstrap Core CSS -->
         <?= $this->Html->css('bootstrap/css/bootstrap.min.css') ?>
 
-        <!-- Custom CSS -->
-        <?= $this->Html->css('bootstrap/css/shop-homepage.css') ?>
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -40,7 +37,9 @@ $cakeDescription = 'Telemaque | e-shop home';
         <![endif]-->
 
         <?= $this->Html->css('base.css'); ?>
-        <?= $this->Html->css('blue.css'); ?>
+        <?= $this->Html->css('cake.css'); ?>
+        <!-- Custom CSS -->
+        <?= $this->Html->css('bootstrap/css/shop-homepage.css') ?>
 
         <?= $this->fetch('meta') ?>
         <?= $this->fetch('css') ?>
@@ -106,8 +105,7 @@ $cakeDescription = 'Telemaque | e-shop home';
                                     <li>
                                         <?= $this->Html->tag('li',
                                             $this->Html->link('Register', ['controller' => 'Users', 'action' => 'add'], ['escape' => false]),
-                                            ['escape' => false]);
-                                        ?>
+                                            ['escape' => false]); ?>
                                     </li>
                                     </li>
                                 </ul>
@@ -121,7 +119,6 @@ $cakeDescription = 'Telemaque | e-shop home';
             <!-- /.container -->
             <div id="content">
                 <?= $this->Flash->render() ?>
-
                 <div class="row">
                     <?= $this->fetch('content') ?>
                 </div>
